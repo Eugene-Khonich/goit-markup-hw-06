@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
@@ -125,6 +125,9 @@ body {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.studio-footer {
+  color: #f4f4fd;
 }
 
 /* .mail {
