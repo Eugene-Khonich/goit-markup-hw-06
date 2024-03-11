@@ -1,21 +1,29 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  color: #2e2f42;
-}
-p {
-  font-size: 16px;
   color: #434455;
-  line-height: 1.5;
+  background-color: #ffffff;
 }
-h2 {
+.header-two {
   font-weight: 700;
   font-size: 36px;
   color: #2e2f42;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
-h3 {
+.header-three {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.paragraf {
+  font-size: 16px;
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Header */
@@ -25,11 +33,24 @@ h3 {
 .logo {
   font-weight: 700;
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.studio {
+  color: #2e2f42;
+}
+.address {
+  font-style: normal;
 }
 .info .contacts {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .info .contacts:hover,
 .info .contacts:focus {
@@ -39,6 +60,8 @@ h3 {
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .navi .link:hover,
 .navi .link:focus {
@@ -49,10 +72,13 @@ h3 {
 .section-main {
   background-color: #2e2f42;
 }
-h1 {
+.title {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .button {
   background-color: #4d5ae5;
@@ -60,6 +86,9 @@ h1 {
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .button:hover,
 .button:focus {
@@ -78,6 +107,9 @@ h1 {
 .cards {
   background-color: #ffffff;
 }
+.team-list {
+  background-color: #ffffff;
+}
 
 /* Section-3 */
 .section-3 {
@@ -89,8 +121,12 @@ h1 {
   background-color: #2e2f42;
 }
 .footer-text {
+  font-size: 16px;
   color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
+
 /* .mail {
   color: #434455;
 }
