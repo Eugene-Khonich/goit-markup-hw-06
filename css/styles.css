@@ -187,16 +187,13 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  margin: -1px;
   border: 0;
-  font-weight: 500;
-  font-size: 20px;
-  color: #2e2f42;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Our team Section-3 */
