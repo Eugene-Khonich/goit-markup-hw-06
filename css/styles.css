@@ -166,13 +166,6 @@ img {
 }
 
 /* Feature Section-2 */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 .feature-list {
   display: flex;
   align-items: flex-start;
@@ -189,6 +182,21 @@ img {
 }
 .feature-list-item .header-three {
   margin-bottom: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 /* Our team Section-3 */
@@ -271,6 +279,7 @@ img {
   color: #f4f4fd;
 }
 .logo-footer {
+  display: inline-block;
   font-weight: 700;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -278,6 +287,5 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
   margin-bottom: 16px;
 }
