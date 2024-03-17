@@ -263,6 +263,7 @@ img {
 /* Footer */
 
 .footer {
+  display: block;
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -271,12 +272,12 @@ img {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 .studio-footer {
   color: #f4f4fd;
 }
 .logo-footer {
-  display: inline-block;
   font-weight: 700;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -284,5 +285,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
   margin-bottom: 16px;
 }
