@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -24,6 +29,9 @@ body {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+a {
+  display: inline-block;
 }
 h1,
 h2,
@@ -287,6 +295,5 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
   margin-bottom: 16px;
 }
