@@ -68,7 +68,7 @@ img {
   padding-bottom: 120px;
 }
 
-/* Header */
+/* ---------- Header ---------- */
 .topline {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -80,7 +80,7 @@ img {
   display: flex;
   align-items: center;
 }
-.logo {
+.logo-blue {
   font-weight: 700;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -91,7 +91,7 @@ img {
   display: flex;
   margin-right: 76px;
 }
-.studio {
+.logo-black {
   color: #2e2f42;
 }
 .address {
@@ -130,7 +130,7 @@ img {
   color: #404bbf;
 }
 
-/* Main section-1 */
+/*---------- Main section-1 ----------*/
 
 .section-one {
   background-color: #2e2f42;
@@ -172,7 +172,7 @@ img {
   color: #ffffff;
 }
 
-/* Feature Section-2 */
+/*---------- Feature Section-2 ----------*/
 .feature-list {
   display: flex;
   gap: 24px;
@@ -181,7 +181,7 @@ img {
   list-style: none;
   width: calc((100% - 72px) / 4);
 }
-.visually-hidden {
+.hidden-header {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -194,7 +194,7 @@ img {
   overflow: hidden;
 }
 
-/* Our team Section-3 */
+/*---------- Our team Section-3 ----------*/
 .section-three .container .header-two {
   margin-bottom: 72px;
 }
@@ -220,7 +220,7 @@ img {
   padding: 32px 0;
 }
 
-/* Portfolio Section-4 */
+/*---------- Portfolio Section-4 ----------*/
 
 .portfolio-list {
   display: flex;
@@ -256,7 +256,7 @@ img {
   padding-left: 16px;
 }
 
-/* Footer */
+/*---------- Footer ----------*/
 
 .footer {
   background-color: #2e2f42;
@@ -272,10 +272,10 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-.studio-footer {
+.logo-footer-black {
   color: #f4f4fd;
 }
-.logo-footer {
+.logo-footer-blue {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
