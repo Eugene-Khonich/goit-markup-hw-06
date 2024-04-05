@@ -245,12 +245,6 @@ img {
   position: relative;
   margin-bottom: 8px;
 }
-.feature-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /*---------- Our team Section-3 ----------*/
 .section-three .container .header-two {
@@ -282,7 +276,7 @@ img {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .team-icon {
   width: 40px;
@@ -416,7 +410,6 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
-  margin-top: 16px;
 }
 .footer-icon-link {
   width: 100%;
