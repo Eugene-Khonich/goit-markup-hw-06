@@ -61,7 +61,7 @@ img {
 .section-two,
 .section-three,
 .section-four {
-  padding-bottom: 96px;
+  margin-bottom: 96px;
 }
 
 /* ---------- Header ---------- */
@@ -74,6 +74,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav {
   display: flex;
@@ -98,7 +99,6 @@ img {
 }
 .address {
   font-style: normal;
-  margin-left: auto;
 }
 .info {
   display: none;
@@ -160,20 +160,24 @@ img {
 /*-------------------- Mobile menu -------------------- */
 
 .mob-menu {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 320px;
+  width: 100%;
   height: 100%;
-  flex-direction: column;
-  padding: 72px 16px 40px;
+  position: fixed;
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 72px 16px 40px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu.is-open {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 .mob-nav {
   margin-bottom: 168px;
@@ -269,15 +273,13 @@ img {
 
 .section-one {
   background-color: #2e2f42;
-  padding: 188px 0 188px;
-  margin: 0 auto;
-  text-align: center;
+  padding: 72px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -285,14 +287,12 @@ img {
 }
 .title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 48px;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 52px 72px;
 }
 .button {
   font-weight: 500;
@@ -853,10 +853,34 @@ textarea:active {
   border: 1px solid #4d5ae5;
 }
 @media (min-resolution: 192dpi) and (min-width: 320px) {
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-mob@2x.jpg);
+  }
 }
 @media (min-resolution: 192dpi) and (min-width: 768px) {
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tablet@2x.jpg);
+  }
 }
 @media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero@2x.jpg);
+  }
 }
 
 @media (min-width: 768px) {
@@ -864,7 +888,23 @@ textarea:active {
     display: flex;
     gap: 40px;
   }
+  .mob-menu {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+  .section-one,
+  .section-two,
+  .section-three,
+  .section-four {
+    margin-bottom: 120px;
+  }
   .logo-blue {
+    padding: 0;
+    margin-right: 120px;
+  }
+  .header-container {
+    justify-content: space-between;
   }
   .nav {
     display: flex;
@@ -881,17 +921,37 @@ textarea:active {
   .burger {
     display: none;
   }
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tablet.jpg);
+    padding: 112px 0;
+  }
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
 @media (min-width: 1158px) {
   .container {
     width: 1158px;
+  }
+  .mob-menu {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
   }
   .section-one,
   .section-two,
   .section-three,
   .section-four {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
   }
   .burger {
     display: none;
@@ -903,5 +963,14 @@ textarea:active {
   }
   .info .contacts {
     padding: 24px 0;
+  }
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero.jpg);
+    padding: 188px 0 188px;
   }
 }
