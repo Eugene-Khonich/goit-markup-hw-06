@@ -1013,15 +1013,6 @@ textarea:active {
   }
   .feature-icon-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f4f4fd;
-    max-width: 264px;
-    height: 112px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    position: relative;
-    margin-bottom: 8px;
   }
   .team-list-item {
     width: calc((100% - 72px) / 4);
