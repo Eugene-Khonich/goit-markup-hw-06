@@ -44,7 +44,7 @@ ol {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .container {
@@ -945,8 +945,6 @@ textarea:active {
   }
   .team-list-item {
     width: calc((100% - 24px) / 2);
-    align-items: center;
-    justify-content: center;
   }
 }
 
