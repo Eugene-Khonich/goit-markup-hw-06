@@ -364,6 +364,9 @@ img {
 .section-three .container .header-two {
   margin-bottom: 72px;
 }
+.our-team-container {
+  padding: 0 28px;
+}
 .section-three {
   background-color: #f4f4fd;
 }
@@ -421,6 +424,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   gap: 48px;
 }
 .portfolio-list-item {
@@ -905,6 +910,8 @@ textarea:active {
   }
   .container {
     width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
   .burger {
     display: none;
@@ -936,6 +943,9 @@ textarea:active {
   .feature-list-item {
     width: calc((100% - 24px) / 2);
   }
+  .our-team-container {
+    padding: 0 16px;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -944,6 +954,14 @@ textarea:active {
   }
   .team-list-item {
     width: calc((100% - 24px) / 2);
+  }
+  .portfolio-list {
+    flex-direction: row;
+    gap: 64px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+    margin: 0 0;
   }
 }
 
@@ -961,6 +979,8 @@ textarea:active {
 @media (min-width: 1158px) {
   .container {
     width: 1158px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
   .mob-menu {
     opacity: 0;
@@ -1022,8 +1042,11 @@ textarea:active {
     padding-top: 120px;
   }
   .portfolio-list {
-    gap: 24px;
+    column-gap: 24px;
     row-gap: 48px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
   }
 }
 @media (min-resolution: 192dpi) and (min-width: 1158px) {
