@@ -309,7 +309,6 @@ img {
 .button:hover,
 .button:focus {
   background-color: #404bbf;
-  color: #ffffff;
 }
 
 /*---------- Feature Section-2 ----------*/
@@ -501,10 +500,12 @@ img {
   gap: 72px;
 }
 .footer-text {
+  font-weight: 400;
   font-size: 16px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 .logo-footer-black {
   color: #f4f4fd;
@@ -579,6 +580,7 @@ img {
   border: 1px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
@@ -619,9 +621,6 @@ img {
   flex-direction: column;
   gap: 24px;
   align-items: center;
-}
-.subscribe-icon {
-  margin-left: 16px;
 }
 
 /*----------Modal overlay----------*/
@@ -975,6 +974,9 @@ textarea:active {
     flex-direction: row;
     align-items: stretch;
   }
+  .sub-input {
+    width: 264px;
+  }
   /* Modal */
   .modal {
     max-width: 408px;
@@ -1102,6 +1104,9 @@ textarea:active {
   .sub-form {
     flex-direction: row;
     align-items: stretch;
+  }
+  .sub-input {
+    opacity: 1;
   }
 }
 @media (min-resolution: 192dpi) and (min-width: 1158px) {
